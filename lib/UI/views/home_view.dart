@@ -1,4 +1,4 @@
-import 'package:Architecture/core/viewmodels/home_model.dart';
+import 'package:Architecture/UI/viewmodels/home_model.dart';
 import 'package:flutter/material.dart';
 
 import 'base_view.dart';
@@ -10,6 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: BaseView<HomeModel>(
+        viewModel: HomeModel(),
         builder: (context, model, child) => 
           Scaffold(
             body: Container(

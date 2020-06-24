@@ -3,8 +3,6 @@
 */
 
 import 'package:Architecture/core/services/dialog_service.dart';
-import 'package:Architecture/core/viewmodels/home_model.dart';
-import 'package:Architecture/core/viewmodels/login_model.dart';
 import 'package:get_it/get_it.dart';
 
 import 'core/services/api.dart';
@@ -21,9 +19,5 @@ void setupLocator(){
   locator.registerLazySingleton(() => Api());
   locator.registerLazySingleton(() => AuthenticationService());
   locator.registerLazySingleton(() => DialogService());
-
-  //Add view models here
-  locator.registerFactory(() => HomeModel());
-  locator.registerFactory(() => LoginModel());
 
 }

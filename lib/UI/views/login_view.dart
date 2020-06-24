@@ -1,6 +1,7 @@
 import 'package:Architecture/UI/components/login_header.dart';
-import 'package:Architecture/core/viewmodels/base_model.dart';
-import 'package:Architecture/core/viewmodels/login_model.dart';
+import 'package:Architecture/UI/viewmodels/base_model.dart';
+import 'package:Architecture/UI/viewmodels/login_model.dart';
+
 import 'package:flutter/material.dart';
 
 import 'base_view.dart';
@@ -13,6 +14,7 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: BaseView<LoginModel>(
+        viewModel: LoginModel(),
         builder: (context, model, child) => 
           Scaffold(
 
